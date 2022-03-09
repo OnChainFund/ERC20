@@ -33,12 +33,16 @@ yarn hardhat
 
 ### 3. 建構 ERC20 token
 到openzeppelin(智能合約標準庫)去尋找ERC20 token
+
 wizard: https://docs.openzeppelin.com/contracts/4.x/wizard
 
 部署測試網需要：
 alchemy api key: https://www.alchemy.com/
+
 rinkeby private key: https://metamask.io/
+
 etherscan api: https://etherscan.io/
+
 rinkeby faucet(領取測試網代幣): https://faucets.chain.link/rinkeby
 
 部署：
