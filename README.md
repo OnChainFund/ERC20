@@ -4,7 +4,9 @@
 
 ### 1. 安裝環境
 install git(版本管理工具): https://git-scm.com/
+
 install node(是一个基於Chrome V8 引擎的JavaScript 運行環境): https://nodejs.org/en/download/
+
 install yarn(套件管理工具): https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
 
 ### 2. 前置準備
