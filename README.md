@@ -36,13 +36,15 @@ yarn hardhat
 
 wizard: https://docs.openzeppelin.com/contracts/4.x/wizard
 
+編譯合約
+```
+yarn hardhat compile
+```
+
 部署測試網需要：
 alchemy api key: https://www.alchemy.com/
-
 rinkeby private key: https://metamask.io/
-
 etherscan api: https://etherscan.io/
-
 rinkeby faucet(領取測試網代幣): https://faucets.chain.link/rinkeby
 
 部署：
@@ -66,4 +68,4 @@ yarn hardhat verify --network rinkeby <contract_address>
 yarn hardhat run scripts/deploy.js --network fuji
 yarn hardhat verify --network fuji <contract_address> 
 ```
-網址：https://testnet.snowtrace.io/address/0x379efA9DBBBa99E401a754d7dFC86E5B6Ea2390C#code
+範例：https://testnet.snowtrace.io/address/0x379efA9DBBBa99E401a754d7dFC86E5B6Ea2390C#code
