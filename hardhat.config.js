@@ -11,11 +11,11 @@ module.exports ={
     networks: {
         rinkeby: {
             url: process.env.ALCHEMY_API_KEY,
-            accounts: [process.env.RINKBY_PRIVATE_KEY],
+            accounts: [process.env.RINKEBY_PRIVATE_KEY],
         },
         fuji: {
             url: FUJI_C_CHAIN_PROVIDER_URL,
-            accounts: [process.env.RINKBY_PRIVATE_KEY]
+            accounts: [process.env.RINKEBY_PRIVATE_KEY]
         }   },
     etherscan: {
         apiKey: {
