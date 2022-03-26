@@ -31,6 +31,12 @@ yarn hardhat
 //選擇Create a basic sample project
 ```
 
+安裝metamask插件
+https://metamask.io/
+
+增加測試鏈到metamask
+https://www.youtube.com/watch?v=-IqtwxztuXU
+
 ### 3. 建構 ERC20 token
 到openzeppelin(智能合約標準庫)去尋找ERC20 token
 
