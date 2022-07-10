@@ -1,15 +1,16 @@
 # 發行自己的 ERC20 token
 
-## 步驟
+## 從 0 開始
+### 步驟
 
-### 1. 安裝環境
+#### 1. 安裝環境
 install git(版本管理工具): https://git-scm.com/
 
 install node(是一个基於Chrome V8 引擎的JavaScript 運行環境): https://nodejs.org/en/download/
 
 install yarn(套件管理工具): https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
 
-### 2. 前置準備
+#### 2. 前置準備
 創建package.json
 ```
 yarn init
@@ -37,7 +38,7 @@ https://metamask.io/
 增加測試鏈到metamask
 https://www.youtube.com/watch?v=-IqtwxztuXU
 
-### 3. 建構 ERC20 token
+#### 3. 建構 ERC20 token
 到openzeppelin(智能合約標準庫)去尋找ERC20 token
 
 wizard: https://docs.openzeppelin.com/contracts/4.x/wizard
@@ -58,7 +59,7 @@ rinkeby faucet(領取測試網代幣): https://faucets.chain.link/rinkeby
 yarn hardhat run scripts/deploy.js --network rinkeby
 ```
 
-### 4. 查看鏈上數據
+#### 4. 查看鏈上數據
 etherscan: https://rinkeby.etherscan.io/
 
 認證
@@ -68,7 +69,7 @@ yarn hardhat verify --network rinkeby <contract_address>
 
 範例：https://rinkeby.etherscan.io/address/0x83F363A16E1E89720a8240702DF0772d9aA39dB1#code
 
-### 自由練習(加分)
+#### 自由練習(加分)
 發幣到不同區塊鏈上 ex.雪崩測試網
 ```
 yarn hardhat run scripts/deploy.js --network fuji

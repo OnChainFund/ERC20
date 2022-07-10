@@ -1,6 +1,18 @@
 const { ethers } = require("hardhat");
 const hre = require("hardhat");
 
+const tokenMap = [
+  "WBTC ",
+  "WETH ",
+  "LINK ",
+  "USDT ",
+  "AAVE",
+  "AAPL",
+  "GOOGL",
+  "GLD",
+  "TSLA",
+]
+
 async function main() {
   const [deployer] = await ethers.getSigners();
   // 顯示部署者帳號
@@ -8,13 +20,14 @@ async function main() {
   // 顯示部署者餘額
   console.log("Deployer accout balance:", (await deployer.getBalance()).toString());
   // 部署
-  const LJCoin = await hre.ethers.getContractFactory("LJCoin");
-  const lj_coin = await LJCoin.deploy();
-
-  await lj_coin.deployed();
-
-  console.log("LJ token deployed to:", lj_coin.address);
-  console.log("Deployer accout balance:", (await deployer.getBalance()).toString());
+  for (let index = 0; index < tokenMap.length; index++) {
+    const symbol = tokenMap[index];
+    const mockTokenContract = await hre.ethers.getContractFactory("MockToken");
+    const mockTokenDeploy = await mockTokenContract.deploy(symbol);
+    await mockTokenDeploy.deployed();
+    console.log((tokenMap[index] + " deployed to:"), mockTokenDeploy.address);
+  }
+  console.log("Deployer account balance:", (await deployer.getBalance()).toString());
 }
 
 main()
