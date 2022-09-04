@@ -2,15 +2,16 @@ const { ethers } = require("hardhat");
 const hre = require("hardhat");
 
 const tokenMap = [
-  "WBTC ",
-  "WETH ",
-  "LINK ",
-  "USDT ",
+  "WBTC",
+  "WETH",
+  "LINK",
+  "USDT",
   "AAVE",
   "AAPL",
   "GOOGL",
   "GLD",
   "TSLA",
+  "TWTR",
 ]
 
 async function main() {
