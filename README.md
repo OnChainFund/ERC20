@@ -76,3 +76,8 @@ yarn hardhat run scripts/deploy.js --network fuji
 yarn hardhat verify --network fuji <contract_address> 
 ```
 範例：https://testnet.snowtrace.io/address/0x379efA9DBBBa99E401a754d7dFC86E5B6Ea2390C#code
+
+verify (use js script)
+```
+ yarn hardhat run scripts/verify.js --network fuji
+ ```
