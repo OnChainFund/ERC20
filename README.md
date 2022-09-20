@@ -79,5 +79,5 @@ yarn hardhat verify --network fuji <contract_address>
 
 verify (use js script)
 ```
- yarn hardhat run scripts/verify.js --network fuji
- ```
+yarn hardhat run scripts/verify.js --network fuji
+```
